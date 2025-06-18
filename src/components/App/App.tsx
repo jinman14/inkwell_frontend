@@ -2,23 +2,26 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>🪶Quillen Code✒️ </h1>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Where Imagination and Technology take turns holding the quill. 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
+      <main className="App-main">
+        <div className="book_cover">
+          <button className="start-button">Begin writing your tale...</button>
+        </div>
+
+        <section className="story_annals">
+          <h2>Recall an old tale?</h2>
+          <p>Maybe someday...</p>
+        </section>
+      </main>
     </div>
   );
 }
